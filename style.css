@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+#newGrid {
+    margin-bottom: 16px;
+    display: block;
+    width: 80px;
+    height: 45px;
+    border: none;
+}
+
+#grid {
+    width: 100%;
+    max-width: 720px;
+    display: grid;
+    grid-template-columns: repeat(var(--gridWidth), 1fr);
+    background-color: white;
+    border: 1px solid #CCC;
+}
+
+.square {
+    aspect-ratio: 1 / 1;
+    transition: background-color .25s;
+}
