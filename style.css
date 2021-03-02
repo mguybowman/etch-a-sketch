@@ -31,6 +31,12 @@ main {
 }
 
 .square {
-    aspect-ratio: 1 / 1;
+    /* aspect-ratio: 1 / 1; */
     transition: background-color .25s;
+}
+
+.square::before {
+    content: "";
+    padding-bottom: 100%;
+    display: block;
 }
